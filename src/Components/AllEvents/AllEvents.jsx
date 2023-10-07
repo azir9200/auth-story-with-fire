@@ -1,7 +1,8 @@
+import { NavLink } from "react-router-dom";
 
 
 const AllEvents = ({ event }) => {
-  const { pic, title, event_time } = event || {}
+  const { id, pic, title, event_time } = event || {}
 
 
   return (
@@ -13,7 +14,7 @@ const AllEvents = ({ event }) => {
         <h2 className="card-title bg-gradient-to-r from-green-500 to-red-500 rounded-md ">{title} </h2>
         <p className=" rounded bg-gradient-to-r from-yellow-800 to-blue-500" >{event_time}</p>
         <div className="card-actions">
-          <button className="btn btn-primary">View Details</button>
+          <button className="btn btn-primary"><NavLink to={`/event/${id}`} >View Details</NavLink> </button>
         </div>
       </div>
     </div>

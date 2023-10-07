@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import AllEvents from "../../Components/AllEvents/AllEvents";
+import Footer from "../../Components/Footer/Footer";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
           }
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
