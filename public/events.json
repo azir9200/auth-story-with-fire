@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
+    "title": "Summer Music Festival",
+    "details": "Join us for a day of live music, food, and fun in the sun!",
+    "event_time": "2023-07-15T14:00:00",
+    "place": "City Park",
+    "organizer": "Local Arts Council",
+    "contact_email": "info@example.com"
+  },
+  {
+    "id": 2,
+    "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
+    "title": "Cultural Diversity Exhibition",
+    "details": "Explore the rich cultural heritage of our community through art and artifacts.",
+    "event_time": "2023-08-20T10:00:00",
+    "place": "Community Center",
+    "organizer": "Cultural Society",
+    "contact_email": "cultural.society@example.com"
+  },
+  {
+    "id": 3,
+    "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
+    "title": "Taste of Tradition Food Fair",
+    "details": "Sample delicious dishes from around the world and celebrate culinary diversity.",
+    "event_time": "2023-09-10T12:30:00",
+    "place": "Town Square",
+    "organizer": "Local Foodies Club",
+    "contact_email": "foodies@example.com"
+  },
+  {
+    "id": 4,
+    "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
+    "title": "Artistic Showcase",
+    "details": "Discover the talents of local artists with live performances and exhibitions.",
+    "event_time": "2023-10-05T16:00:00",
+    "place": "Community Gallery",
+    "organizer": "Community Arts Collective",
+    "contact_email": "arts@example.com"
+  },
+  {
+    "id": 5,
+    "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
+    "title": "Cultural Dance Night",
+    "details": "Experience the beauty and rhythm of traditional dances from different cultures.",
+    "event_time": "2023-11-12T19:00:00",
+    "place": "Community Hall",
+    "organizer": "Dance Enthusiasts Group",
+    "contact_email": "dance@example.com"
+  },
+  {
+    "id": 6,
+    "pic": "https://i.ibb.co/9HQk8LR/two-senior-women-crossing-stone-bridge-while-out-nature.jpg",
+    "title": "Heritage Walking Tour",
+    "details": "Take a guided tour through historic landmarks in our community.",
+    "event_time": "2023-12-03T11:00:00",
+    "place": "Starting Point: Library",
+    "organizer": "Local History Society",
+    "contact_email": "history@example.com"
+  },
+  {
+    "id": 7,
+    "pic": "https://i.ibb.co/jkvb5CH/vintage-reel-camera-tape-clapperboard-wood.jpg",
+    "title": "Cultural Film Festival",
+    "details": "Enjoy a selection of international films showcasing diverse storytelling.",
+    "event_time": "2024-01-20T18:30:00",
+    "place": "Community Cinema",
+    "organizer": "Film Enthusiasts Club",
+    "contact_email": "film@example.com"
+  },
+  {
+    "id": 8,
+    "pic": "https://i.ibb.co/jkvb5CH/vintage-reel-camera-tape-clapperboard-wood.jpg",
+    "title": "Community Potluck Picnic",
+    "details": "Bring your favorite dish to share and enjoy a day of food and fellowship.",
+    "event_time": "2024-02-15T13:00:00",
+    "place": "Riverside Park",
+    "organizer": "Community Association",
+    "contact_email": "community@example.com"
+  },
+  {
+    "id": 9,
+    "pic": "https://i.ibb.co/jkvb5CH/vintage-reel-camera-tape-clapperboard-wood.jpg",
+    "title": "Cultural Craft Fair",
+    "details": "Shop for unique handmade crafts and support local artisans.",
+    "event_time": "2024-03-08T10:00:00",
+    "place": "Community Center",
+    "organizer": "Crafters Collective",
+    "contact_email": "crafters@example.com"
+  }
+]
