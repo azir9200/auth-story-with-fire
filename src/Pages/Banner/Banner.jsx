@@ -22,7 +22,6 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      {/* <p>https://i.ibb.co/dDTHYcF/banner2.png</p> */}
     </div>
   );
 };

@@ -22,9 +22,9 @@ const Register = () => {
     const password = form.get('password');
     console.log(email, password)
 
-    if (!/ "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.text(password)) {
-      console.log("not correct way !")
-    }
+    // if (!/ "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.text(password)) {
+    //   console.log("not correct way !")
+    // }
 
     // const email = e.target.email.value;
     // const password = e.target.password.value;
@@ -55,18 +55,15 @@ const Register = () => {
             <label className="label">
               <span className="label-text">Email</span>
             </label>
-            <input onChange={(e) => setEmail(e.target.value)}
+            <input
               type="email" name="email" className="input input-bordered" placeholder="Email" required />
           </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input onChange={(e) => setEmail(e.target.value)}
+            <input
               type="password" name="password" placeholder="Password" className="input input-bordered" required />
-            <label className="label">
-              <a href="#" className="label-text-alt link link-hover">Forgot your password ?</a>
-            </label>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>

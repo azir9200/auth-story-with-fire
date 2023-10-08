@@ -4,8 +4,9 @@
     "pic": "https://i.ibb.co/qRKz98m/pic4-music.png",
     "title": "Summer Music Festival",
     "details": "Join us for a day of live music, food, and fun in the sun!",
-    "event_time": "2023-07-15T14:00:00",
+    "event_time": "2023-07-15    Time:14:00:00",
     "place": "City Park",
+    "price": "$290.00",
     "organizer": "Local Arts Council",
     "contact_email": "info@example.com"
   },
@@ -14,8 +15,9 @@
     "pic": "https://i.ibb.co/dDTHYcF/banner2.pnghttps://i.ibb.co/949CcZV/pic-hand.png",
     "title": "Cultural Diversity Exhibition",
     "details": "Explore the rich cultural heritage of our community through art and artifacts.",
-    "event_time": "2023-08-20T10:00:00",
+    "event_time": "2023-08-20     Time:10:00:00",
     "place": "Community Center",
+    "price": "$199.00",
     "organizer": "Cultural Society",
     "contact_email": "cultural.society@example.com"
   },
@@ -24,8 +26,9 @@
     "pic": "https://i.ibb.co/9hcv8j1/pic1.png",
     "title": "Taste of Tradition Food Fair",
     "details": "Sample delicious dishes from around the world and celebrate culinary diversity.",
-    "event_time": "2023-09-10T12:30:00",
+    "event_time": "2023-09-10     Time:12:30:00",
     "place": "Town Square",
+    "price": "$499.00",
     "organizer": "Local Foodies Club",
     "contact_email": "foodies@example.com"
   },
@@ -34,8 +37,9 @@
     "pic": "https://i.ibb.co/rHSBDgk/pic5art.png",
     "title": "Artistic Showcase",
     "details": "Discover the talents of local artists with live performances and exhibitions.",
-    "event_time": "2023-10-05T16:00:00",
+    "event_time": "2023-10-05      Time:16:00:00",
     "place": "Community Gallery",
+    "price": "$249.00",
     "organizer": "Community Arts Collective",
     "contact_email": "arts@example.com"
   },
@@ -44,8 +48,9 @@
     "pic": "https://i.ibb.co/Yf4SPn3/pic3.png",
     "title": "Cultural Music Moment",
     "details": "Experience the beauty and rhythm of traditional dances from different cultures.",
-    "event_time": "2023-11-12T19:00:00",
+    "event_time": "2023-11-12    Time:19:00:00",
     "place": "Community Hall",
+    "price": "$299.00",
     "organizer": "Dance Enthusiasts Group",
     "contact_email": "dance@example.com"
   },
@@ -54,9 +59,10 @@
     "pic": "https://i.ibb.co/9HQk8LR/two-senior-women-crossing-stone-bridge-while-out-nature.jpg",
     "title": "Heritage Walking Tour",
     "details": "Take a guided tour through historic landmarks in our community.",
-    "event_time": "2023-12-03T11:00:00",
+    "event_time": "2023-12-03     Time:11:00:00",
     "place": "Starting Point: Library",
     "organizer": "Local History Society",
+    "price": "$508.00",
     "contact_email": "history@example.com"
   },
   {
@@ -64,8 +70,9 @@
     "pic": "https://i.ibb.co/nQFkVr1/picfilm.png",
     "title": "Cultural Film Festival",
     "details": "Enjoy a selection of international films showcasing diverse storytelling.",
-    "event_time": "2024-01-20T18:30:00",
+    "event_time": "2024-01-20       Time:18:30:00",
     "place": "Community Cinema",
+    "price": "$305.00",
     "organizer": "Film Enthusiasts Club",
     "contact_email": "film@example.com"
   },
@@ -74,8 +81,9 @@
     "pic": "https://i.ibb.co/xhdxzmW/pic-picpng.png",
     "title": "Community Potluck Picnic",
     "details": "Bring your favorite dish to share and enjoy a day of food and fellowship.",
-    "event_time": "2024-02-15T13:00:00",
+    "event_time": "2024-02-15     Time:13:00:00",
     "place": "Riverside Park",
+    "price": "$356.00",
     "organizer": "Community Association",
     "contact_email": "community@example.com"
   },
@@ -84,9 +92,10 @@
     "pic": "https://i.ibb.co/gDGCsz8/pic-craft.png",
     "title": "Cultural Craft Fair",
     "details": "Shop for unique handmade crafts and support local artisans.",
-    "event_time": "2024-03-08T10:00:00",
+    "event_time": "2024-03-08     Time:10:00:00",
     "place": "Community Center",
     "organizer": "Crafters Collective",
+    "price": "$205.00",
     "contact_email": "crafters@example.com"
   }
 ]

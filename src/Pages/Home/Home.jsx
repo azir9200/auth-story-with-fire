@@ -3,10 +3,6 @@ import Banner from "../Banner/Banner";
 import AllEvents from "../../Components/AllEvents/AllEvents";
 
 
-
-
-
-
 const Home = () => {
   const events = useLoaderData()
   console.log(events);

@@ -5,22 +5,26 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Login = () => {
-  const { googleSignIn } = useContext(AuthContext);
+  const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleGoogle = () => {
-    googleSignIn().then(result => {
-      console.log(result.user);
-    })
-  }
+
+  // const handleGoogle = () => {
+  //   googleSignIn().then(result => {
+  //     console.log(result.user);
+  //   })
+  // }
 
   const handleLogin = e => {
     e.preventDefault();
-    const email = e.target.email.value;
-    const password = e.target.password.value;
-    console.log(email, password);
-    <Navigate to={"/"} >  </Navigate>
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+
+    signIn(email, password);
+
+    <Navigate to={"/"} ></Navigate>
   }
 
   return (
@@ -45,7 +49,7 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button onSubmit={handleGoogle} className="btn btn-primary">Login</button>
+            <button className="btn btn-primary">Login</button>
           </div>
         </form>
         <p className="text-center mt-4">Do not have an account <Link className="text-blue-700 font-bold" to="/register">Register</Link></p>
