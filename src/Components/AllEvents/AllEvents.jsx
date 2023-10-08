@@ -6,15 +6,15 @@ const AllEvents = ({ event }) => {
 
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card  shadow-xl">
       <figure className="px-10 pt-10">
         <img src={pic} alt="event" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title bg-gradient-to-r from-green-500 to-red-500 rounded-md ">{title} </h2>
-        <p className=" rounded bg-gradient-to-r from-yellow-800 to-blue-500" >{event_time}</p>
+        <h2 className="card-title bg-green-300 p-4 border rounded-md ">{title} </h2>
+        <p className=" rounded bg-blue-500" >{event_time}</p>
         <div className="card-actions">
-          <button className="btn btn-primary"><NavLink to={`/event/${id}`} >View Details</NavLink> </button>
+          <button className="btn btn-primary"><NavLink to={`'/events/${id}`} >View Details</NavLink> </button>
         </div>
       </div>
     </div>

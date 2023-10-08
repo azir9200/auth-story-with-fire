@@ -1,15 +1,43 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Register = () => {
 
+  const { createUser } = useContext(AuthContext);
+
+
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [error, setError] = useState("");
+
+
   const handleRegister = e => {
     e.preventDefault();
-    const email = e.target.email.value;
-    const password = e.target.password.value;
-    console.log(email, password);
-  }
 
+    const form = new FormData(e.currentTarget);
+
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email, password)
+
+    if (!/ "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.text(password)) {
+      console.log("not correct way !")
+    }
+
+    // const email = e.target.email.value;
+    // const password = e.target.password.value;
+    // console.log(email, password);
+
+    createUser(email, password)
+      .then(result => {
+        console.log(result.user)
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }
   return (
     <div>
 
@@ -20,19 +48,22 @@ const Register = () => {
             <label className="label">
               <span className="label-text">Name</span>
             </label>
-            <input type="text" name="name" placeholder="Your Name..." className="input input-bordered" required />
+            <input
+              type="text" name="name" placeholder="Your Name..." className="input input-bordered" required />
           </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
-            <input type="email" name="email" className="input input-bordered" placeholder="Email" required />
+            <input onChange={(e) => setEmail(e.target.value)}
+              type="email" name="email" className="input input-bordered" placeholder="Email" required />
           </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
-            <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+            <input onChange={(e) => setEmail(e.target.value)}
+              type="password" name="password" placeholder="Password" className="input input-bordered" required />
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">Forgot your password ?</a>
             </label>

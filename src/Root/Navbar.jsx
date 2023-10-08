@@ -1,16 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 
-
 const Navbar = () => {
 
-
   return (
-    <div>
+    <div className="" >
 
-      <nav className="flex justify-around items-center py-6 shadow-md "  >
-        <p className="font-bold text-2xl text-blue-700  " >Community and Cultural Events</p>
-        <ul className="flex text-xl font-bold text-red-600 gap-8 ">
+      <nav className="grid sm:grid-flow-col md:grid-cols-2  justify-around bg-blue-200 items-center py-6 shadow-md  "  >
+        <p className="font-bold text-2xl ml-6 text-blue-700" >Community and Cultural Events</p>
+        <ul className="flex  text-xl font-bold text-red-600 gap-8 ">
           <li>
             <NavLink
               to="/"
@@ -43,20 +41,14 @@ const Navbar = () => {
               Contact
             </NavLink>
           </li>
-          <li>
+        </ul>
+        <ul className="flex  text-xl font-bold text-red-600 gap-8 ">
+          <li className="mr-6" >
             <NavLink
               to="/login"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-green-500 underline " : ""}>
               Login
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/Register"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-green-500 underline " : ""}>
-              Register
             </NavLink>
           </li>
         </ul>

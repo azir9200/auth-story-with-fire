@@ -1,41 +1,31 @@
-
-
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contacts = () => {
   return (
     <div>
-      <h2 className="text-2xl">make a simple contact with us</h2>
+      <div className="text-center items-center" >
+        <h2 className="text-4xl">You can get more information using </h2>
 
-      <div>
-        <div className='p-4 space-y-3 mb-6'>
-          <h2 className="text-3xl">Login With</h2>
-          <button className="btn btn-outline w-full">
-            <FaGoogle></FaGoogle>
-            Google
-          </button>
-          <button className="btn btn-outline w-full">
-            <FaGithub></FaGithub>
-            Github
-          </button>
-        </div>
+        <hr className="text-blue-600" />
+
         <div className='p-4 mb-6'>
-          <h2 className="text-3xl mb-4">Find Us on</h2>
-          <a className='p-4 flex text-lg items-center border rounded-t-lg' href="">
-            <FaFacebook className='mr-3'></FaFacebook>
+          <h2 className="text-6xl mb-4">Find Us on</h2>
+          <a className='p-4 flex text-4xl justify-center text-blue-950 items-center border rounded-t-lg' href="">
+            <FaFacebook></FaFacebook>
             <span>Facebook</span>
           </a>
-          <a className='p-4 flex text-lg items-center border-x' href="">
-            <FaTwitter className='mr-2'></FaTwitter>
+          <a className='p-4 flex text-4xl justify-center text-blue-500 items-center border-x' href="">
+            <FaTwitter></FaTwitter>
             <span>Twitter</span>
           </a>
-          <a className='p-4 flex text-lg items-center border rounded-b-lg' href="">
-            <FaInstagram className='mr-2'></FaInstagram>
-            <span>Facebook</span>
+          <a className='p-4 flex text-4xl justify-center text-pink-700 items-center border rounded-b-lg' href="">
+            <FaInstagram className="bg-blue-300" ></FaInstagram>
+            <span>Instagram</span>
           </a>
         </div>
-
       </div>
-
+      <p className="text-center mt-4">Do not have an account <Link className="text-blue-700 font-bold" to="/register">Connect with..</Link></p>
     </div>
   );
 };
