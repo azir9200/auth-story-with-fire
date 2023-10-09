@@ -8,11 +8,6 @@ const Register = () => {
   const { createUser } = useContext(AuthContext);
 
 
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [error, setError] = useState("");
-
-
   const handleRegister = e => {
     e.preventDefault();
 
@@ -35,9 +30,9 @@ const Register = () => {
         console.log(result.user)
       })
       .catch(error => {
-        console.log(error);
+        console.error(error);
       })
-      
+
   }
   return (
     <div>

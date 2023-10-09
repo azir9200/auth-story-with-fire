@@ -5,6 +5,7 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+console.log('inside firebase', import.meta.env.VITE_PASS)
 const firebaseConfig = {
   apiKey: "AIzaSyDR-8H6jOXOZGhPmtGJT5R1WenowYNivpM",
   authDomain: "auth-story-with-fire-ceffc.firebaseapp.com",

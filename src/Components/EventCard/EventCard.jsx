@@ -9,7 +9,7 @@ const EventCard = () => {
   const events = useLoaderData();
 
   useEffect(() => {
-    const findEvents = events?.find((event) => event.id === id);
+    const findEvents = events?.find((event) => event.id == id);
     setEvent(findEvents);
   }, [id, events]);
   console.log(event);
@@ -18,7 +18,7 @@ const EventCard = () => {
 
   return (
     <div className="card card-side bg-green-300 shadow-xl">
-      {/* <figure><img src={pic} alt="Movie" /></figure> */}
+      <figure><img src="https://i.ibb.co/dDTHYcF/banner2.pnghttps://i.ibb.co/949CcZV/pic-hand.png" alt="Movie" /></figure>
       <div className="card-body">
         <h2 className="card-title">{title} </h2>
         <p> </p>

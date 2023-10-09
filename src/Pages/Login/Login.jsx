@@ -3,12 +3,10 @@ import { useContext } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
-
-
-
 const Login = () => {
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
+  console.log('my location login', location)
   const navigate = useNavigate();
 
   // const handleGoogle = () => {
@@ -17,13 +15,22 @@ const Login = () => {
   //   })
   // }
 
-  const handleLogin = e => {
+  const handleLogin = async e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
 
-    signIn(email, password);
+    await signIn(email, password)
+      .then(result => {
+        console.log(result.user);
+
+        navigate(location?.state ? location.state : '/')
+
+
+      }).catch(error => {
+        console.error(error);
+      })
 
     const signIn = true;
     if (signIn) {
