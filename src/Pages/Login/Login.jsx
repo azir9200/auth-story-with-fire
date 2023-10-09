@@ -1,6 +1,8 @@
+import { toast } from 'react-hot-toast';
 import { useContext } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+
 
 
 
@@ -8,7 +10,6 @@ const Login = () => {
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
-
 
   // const handleGoogle = () => {
   //   googleSignIn().then(result => {
@@ -23,6 +24,18 @@ const Login = () => {
     const password = form.get("password");
 
     signIn(email, password);
+
+    const signIn = true;
+    if (signIn) {
+      toast.success('Login successful');
+    } else {
+
+      toast.error('Login failed. Please check your credentials.');
+    }
+
+
+
+
 
     <Navigate to={"/"} ></Navigate>
   }
